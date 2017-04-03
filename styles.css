@@ -1,5 +1,16 @@
+body{
+    background-color: white;
+    margin-left: 30px;
+    max-width: 650px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    text-align: center;
+}
+
 header{
     display:inline-flex;
+    margin-left: 25px;
 }
 
 header img{
@@ -11,20 +22,81 @@ header p{
     font-weight: bold;
 }
 
+form{
+    margin-left: 25px;
+    padding: 25px;
+    border: 0.5px solid #F0F0F0;
+    border-radius: 5px;
+    box-shadow: 2px 2px 4px 2px rgba(0, 0, 0, 0.5);
+    display:flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+}
+
 input {
     height: 30px;
     border-radius: 5px;
-    font-size: 18px;
+    font-size: 15px;
 }
 
 button {
+    background-color: #F0F0F0;
     height: 35px;
-    width: 70px;
- border-radius: 5px;  
+    width: 80px;
+    border-radius: 5px; 
+    font-weight: bold; 
+}
+
+button:hover{
+    cursor: pointer;
+    font-size: 17px;
 }
 
 .userData{
-    
+    margin-top: 15px;
+    margin-left: 25px;
+    text-align: left;
+}
+
+.userData div{
+    display: inline-flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.userData p{
+        margin: 0px;
+}
+
+.userData img{
+    max-width: 100px;
+    max-height: 100px;
+    float:left;
+}
+
+.userData h4{
+padding-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid black;
+}
+
+.userData ul{
+    list-style: none;
+    padding-left: 0;
+}
+
+.userData li{
+    font-weight: bold;
+    margin-top: 20px;
+    padding-bottom: 15px;
+    font-size: 16px;
+    border-bottom: 1px solid #F0F0F0;
+}
+
+.userData li span{
+    float:right;
 }
 
 footer {
@@ -32,3 +104,19 @@ footer {
   color: white;
 }
 
+@media screen and (min-width: 0px) and (max-width: 400px) {
+
+header p{
+display:none;
+}
+
+form {
+    margin-top: 30px;
+    margin-left: 0px;
+}
+
+input{
+    margin-bottom: 5px;
+}
+
+}

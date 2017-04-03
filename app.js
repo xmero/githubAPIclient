@@ -49,7 +49,7 @@ function addUser(user) {
 }
 
 function getError(error) {
-    const errMsg = 'Does not exist'
+    const errMsg = '<p>Does not exist</p>'
     if (error !== undefined) {
         document.querySelector('.error').innerHTML = errMsg
     }
